@@ -1,0 +1,12 @@
+server:
+  port: 5050
+spring:
+  application:
+    name: school-mito
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/school
+
+security:
+  secret: $2a$12$I7950NKPWOix9YKMyT0g2uxYscZh5skWuIE669ncABqICC13bflUq
+
