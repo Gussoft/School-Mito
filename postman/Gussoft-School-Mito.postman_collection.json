@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "86b3be7c-49ff-469e-9e6f-15ed3f8f9f0a",
+		"name": "Mito",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14396551",
+		"_collection_link": "https://gussoft.postman.co/workspace/Guss-Project~f4eb3674-764f-4cc3-be0e-2c65f4f96f4d/collection/14396551-86b3be7c-49ff-469e-9e6f-15ed3f8f9f0a?action=share&source=collection_link&creator=14396551"
+	},
+	"item": [
+		{
+			"name": "localhost:5050/courses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Programacion 1\",\r\n        \"acronym\": \"P1\",\r\n        \"status\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5050/courses",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5050/students",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Abelino delete\",\r\n    \"lastName\": \"Cacerez E\",\r\n    \"dni\": \"125\",\r\n    \"age\": 13\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5050/students",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5050/registers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"2024-06-15T12:30:00\",\r\n  \"student\": {\r\n    \"id\": \"666d9a6cfde0d16bac9e4a80\"\r\n  },\r\n  \"courses\": [\r\n    {\r\n        \"id\": \"666d9459a503ed061d239781\"\r\n    },\r\n        {\r\n        \"id\": \"666d9465a503ed061d239782\"\r\n    }\r\n  ],\r\n  \"status\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5050/registers",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"registers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5050/students/page",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJyb2xlcyI6WyJVU1VBUklPIl0sInVzZXJuYW1lIjoibHVpcyIsIm1hc3RlciI6Ikd1c3NvZnQiLCJzdWIiOiJsdWlzIiwiaWF0IjoxNzE5MDgxMTE0LCJleHAiOjE3MTkwOTkxMTR9.UXGSnSoyr4HR2X-3rWvHKFHE4kYzUZjt3A5bHIA4zlbuz1xBdeKoCde1kn2AbQC8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/students/page",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"students",
+						"page"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5050/registers/6677196b5ce59f66adc07be0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJyb2xlcyI6WyJVU1VBUklPIl0sInVzZXJuYW1lIjoibHVpcyIsIm1hc3RlciI6Ikd1c3NvZnQiLCJzdWIiOiJsdWlzIiwiaWF0IjoxNzE5MDgxMTE0LCJleHAiOjE3MTkwOTkxMTR9.UXGSnSoyr4HR2X-3rWvHKFHE4kYzUZjt3A5bHIA4zlbuz1xBdeKoCde1kn2AbQC8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\": \"2024-06-22T10:45:15.700\",\r\n    \"student\": {\r\n        \"id\": \"666da769d5030e1f2ddf4b60\"\r\n    },\r\n    \"courses\": [\r\n        {\r\n            \"id\": \"666d9459a503ed061d239781\"\r\n        },\r\n        {\r\n            \"id\": \"666d9465a503ed061d239782\"\r\n        }\r\n    ],\r\n    \"status\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/registers/6677196b5ce59f66adc07be0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"registers",
+						"6677196b5ce59f66adc07be0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5050/v2/registers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJyb2xlcyI6WyJBRE1JTklTVFJBRE9SIl0sInVzZXJuYW1lIjoiZ3VzcyIsIm1hc3RlciI6Ikd1c3NvZnQiLCJzdWIiOiJndXNzIiwiaWF0IjoxNzE5MDc5MzAwLCJleHAiOjE3MTkwOTczMDB9.vn3ZQSfWEO2RmCCyW7M7yQp2qAIdfZK_C_xZ2Hm7YPjN5mfYyVMWXd7dw3KoS579",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\": \"2024-06-22T10:36:26.732\",\r\n    \"student\": {\r\n        \"id\": \"666d9a7ffde0d16bac9e4a81\"\r\n    },\r\n    \"courses\": [\r\n        {\r\n            \"id\": \"666d9459a503ed061d239781\"\r\n        },\r\n        {\r\n            \"id\": \"666d9465a503ed061d239782\"\r\n        }\r\n    ],\r\n    \"status\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/v2/registers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"v2",
+						"registers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5050/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"luis\",\r\n    \"password\": \"123\",\r\n    \"status\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5050/roles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"USUARIO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5050/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"luis\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5050/v2/courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJyb2xlcyI6WyJVU1VBUklPIl0sInVzZXJuYW1lIjoibHVpcyIsIm1hc3RlciI6Ikd1c3NvZnQiLCJzdWIiOiJsdWlzIiwiaWF0IjoxNzE5MDgxMTE0LCJleHAiOjE3MTkwOTkxMTR9.UXGSnSoyr4HR2X-3rWvHKFHE4kYzUZjt3A5bHIA4zlbuz1xBdeKoCde1kn2AbQC8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/v2/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"v2",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
