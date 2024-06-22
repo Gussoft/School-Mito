@@ -31,12 +31,8 @@ tambien el uso de reactividad con Mongo reactive Webflux JAVA 17 Validadores y s
 ```
 
 3. Registar dos roles **ADMINISTADOR Y USUARIO**
-4.
 
-   ```bash
-   mongo
-   use school
-    ```
+
 ![img.png](images/img.png)
 
 # Se deja Documento Postman en la raiz ./postman
